@@ -3,7 +3,11 @@ module.exports = {
     title: `Luke Texon Portfolio`,
     description: `My personal portfolio website.`,
     author: `Luke Texon`,
-  },
+    github: `Luke-TE`,
+    gitconnected: `luke-te`,
+    linkedin: `luke-texon/`,
+    email: `ljt18@ic.ac.uk`,
+  },  
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

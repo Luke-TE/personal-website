@@ -11,8 +11,8 @@ interface Props {
 }
 
 const SEO: React.FC<Props> = ({ description, lang, meta, title }: Props) => {
-  const siteMetadata = useSiteMetadata()
-  const metaDescription = description || siteMetadata.description
+  const {description: siteDescription, title: siteTitle, author: siteAuthor } = useSiteMetadata()
+  const metaDescription = description || siteDescription
 
   return (
     <Helmet
@@ -20,7 +20,7 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }: Props) => {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${siteMetadata.title}`}
+      titleTemplate={`%s | ${siteTitle}`}
       meta={[
         {
           name: `description`,
@@ -44,7 +44,7 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }: Props) => {
         },
         {
           name: `twitter:creator`,
-          content: siteMetadata.author,
+          content: siteAuthor,
         },
         {
           name: `twitter:title`,
