@@ -16,23 +16,27 @@ const Header: React.FC = () => (
     >
       <h1>Hi, I'm Luke.</h1>
       <p>
-        Software Engineer, CompSci undergraduate, President of Filipino Society at Imperial College London.
+        Software engineer, <br />
+        CompSci undergraduate, <br />
+        President of Filipino Society @ ICL.
       </p>
       <div
         style={{
           display: 'flex',
+          justifyContent: "space-between",
+          maxWidth: "7rem"
         }}
       >
-        <p>
+        <div>
           <Link style={{ textDecoration: 'none' }} to="/">
             Home
           </Link>
-        </p>
-        <p>
+        </div>
+        <div>
           <Link style={{ textDecoration: 'none' }} to="/contact/">
             Contact
           </Link>
-        </p>
+        </div>
       </div>
     </div>
   </header>

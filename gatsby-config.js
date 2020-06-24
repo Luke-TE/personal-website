@@ -5,7 +5,7 @@ module.exports = {
     author: `Luke Texon`,
     github: `Luke-TE`,
     gitconnected: `luke-te`,
-    linkedin: `luke-texon/`,
+    linkedin: `luke-texon`,
     email: `ljt18@ic.ac.uk`,
   },  
   plugins: [
