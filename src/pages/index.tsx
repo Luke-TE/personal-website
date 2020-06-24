@@ -8,7 +8,7 @@ const IndexPage: React.FC<PageProps> = (props: PageProps) => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <h2>My Projects</h2>
+      <h2>My projects</h2>
       <ul>
         <li>Project 1</li>
         <li>Project 2</li>

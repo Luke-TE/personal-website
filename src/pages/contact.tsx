@@ -8,6 +8,7 @@ const ContactPage: React.FC<PageProps> = (props: PageProps) => (
   <Layout>
     <SEO title="Contact Me" />
     <h2>Contact Me</h2>
+    <p>CV: </p>
     <p>Email: </p>
     <p>LinkedIn: </p>
     <p>GitHub: </p>
