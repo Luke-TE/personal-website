@@ -1,8 +1,7 @@
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
 
-const Header = ({ siteTitle }) => (
+const Header: React.FC = () => (
   <header
     style={{
       marginBottom: `1.45rem`,
@@ -22,18 +21,7 @@ const Header = ({ siteTitle }) => (
       >
         <Link to="/">My Projects</Link>
         <Link to="/contact/">Contact Me</Link>
-      </div>
-      {/* <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1> */}
+      </div>      
       <h1>Hi, I'm Luke.</h1>
       <p>
         Filipino computer science student at Imperial College London, Filipino
@@ -42,13 +30,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Header;
