@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const ContactPage: React.FC<PageProps> = (props: PageProps) => {
-  const { email, linkedin, github, gitconnected } = useSiteMetadata();
+  const { email, linkedin, github, gitconnected } = useSiteMetadata().contact;
 
   return (
     <Layout>
