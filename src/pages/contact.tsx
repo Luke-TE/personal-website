@@ -7,7 +7,7 @@ import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const ContactPage: React.FC<PageProps> = () => {
   const {
-    email, linkedin, github, gitconnected,
+    email, linkedin, github, gitconnected, phone,
   } = useSiteMetadata().contact;
 
   return (
@@ -16,9 +16,9 @@ const ContactPage: React.FC<PageProps> = () => {
       <h2>Contact me</h2>
       <i>Recruitment</i>
       <p>
-        {/* <a>CV</a> */}
+        Contact Number:
         {' '}
-        (PDF)
+        <a href={`tel:${phone}`}>{phone}</a>
         <br />
         Email:
         {' '}

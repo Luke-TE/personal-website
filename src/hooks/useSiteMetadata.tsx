@@ -14,6 +14,7 @@ const useSiteMetadata = () => {
               gitconnected
               linkedin
               email
+              phone
             }
           }
         }

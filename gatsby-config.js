@@ -8,6 +8,7 @@ module.exports = {
       gitconnected: `luke-te`,
       linkedin: `luke-texon`,
       email: `ljt18@ic.ac.uk`,
+      phone: `+447505729228`
     },
   },
   plugins: [
