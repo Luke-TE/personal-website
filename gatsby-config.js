@@ -20,6 +20,12 @@ module.exports = {
       },
     },    
     {
+      resolve: `gatsby-source-custom-api`,
+      options: {
+        url: "http://gitconnected.com/v1/portfolio/luke-te"
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
