@@ -7,14 +7,17 @@ import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const ContactPage: React.FC<PageProps> = () => {
   const {
-    email, linkedin, github, gitconnected, phone,
+    email,
+    linkedin,
+    github,
+    gitconnected,
+    phone,
   } = useSiteMetadata().contact;
 
   return (
     <Layout>
       <SEO title="Contact" />
-      <h2>Contact me</h2>
-      <i>Recruitment</i>
+      <h4>Recruitment</h4>
       <p>
         Contact Number:
         {' '}
@@ -25,9 +28,8 @@ const ContactPage: React.FC<PageProps> = () => {
         <a href={`mailto:${email}`}>{email}</a>
         {' '}
       </p>
-      <p />
-
-      <i>Social Media</i>
+      <br />
+      <h4>Social Media</h4>
       <p>
         GitHub:
         {' '}
@@ -47,8 +49,6 @@ const ContactPage: React.FC<PageProps> = () => {
         {' '}
         <br />
       </p>
-      <p />
-      <p />
     </Layout>
   );
 };

@@ -1,6 +1,9 @@
 import React from 'react';
 import { PageProps, graphql } from 'gatsby';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../utils/fontawesome';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -27,7 +30,12 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data }: PageProps<DataProps
           project.githubUrl ? (
             <p>
               <a href={project.githubUrl}>{project.displayName}</a>
-              {project.website ? <a href={project.website}> Website</a> : ''}
+              {project.website ? (
+                <a href={project.website}>
+                  {' '}
+                  <FontAwesomeIcon icon="globe" />
+                </a>
+              ) : ''}
               {' '}
               -
               {' '}

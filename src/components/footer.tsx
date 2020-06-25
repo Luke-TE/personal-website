@@ -3,9 +3,10 @@ import React from 'react';
 const Footer: React.FC = () => (
   <footer
     style={{
-      marginTop: '5.5rem',
+      marginTop: '4rem',
     }}
   >
+    <hr />
     ©
     {' '}
     {new Date().getFullYear()}

@@ -506,6 +506,7 @@ address {
   margin-bottom: 1.45rem;
 }
 b {
+  color: gray;
   font-weight: bold;
 }
 strong {
