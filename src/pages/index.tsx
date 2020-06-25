@@ -17,21 +17,25 @@ type DataProps = {
   };
 };
 
-const IndexPage: React.FC<PageProps<DataProps>> = ({ data }) => (
+const IndexPage: React.FC<PageProps<DataProps>> = ({ data }: PageProps<DataProps>) => (
   <Layout>
     <SEO title="Home" />
     <div>
       <h2>My projects</h2>
-      <div>                  
-          {data.allCustomApi.nodes[0].projects.map(project => (
-            project.githubUrl ? (
-              <p>
-                <a href={project.githubUrl}>{project.displayName}</a>
-                {project.website ? <a href={project.website}> Website</a> : ""} -{' '}
-                {project.summary}
-              </p> 
-            ) : ""
-          ))}{""}        
+      <div>
+        {data.allCustomApi.nodes[0].projects.map((project) => (
+          project.githubUrl ? (
+            <p>
+              <a href={project.githubUrl}>{project.displayName}</a>
+              {project.website ? <a href={project.website}> Website</a> : ''}
+              {' '}
+              -
+              {' '}
+              {project.summary}
+            </p>
+          ) : ''
+        ))}
+
       </div>
     </div>
   </Layout>

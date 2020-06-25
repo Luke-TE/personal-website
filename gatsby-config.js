@@ -8,9 +8,20 @@ module.exports = {
       gitconnected: `luke-te`,
       linkedin: `luke-texon`,
       email: `ljt18@ic.ac.uk`,
-    }
-  },  
+    },
+  },
   plugins: [
+    {
+      resolve: `gatsby-plugin-eslint`,
+      options: {
+        test: /\.ts$|\.tsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ['develop'],
+        options: {
+          failOnError: false,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,12 +29,12 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },    
+    },
     {
       resolve: `gatsby-source-custom-api`,
       options: {
-        url: "http://gitconnected.com/v1/portfolio/luke-te"
-      }
+        url: 'http://gitconnected.com/v1/portfolio/luke-te',
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -41,4 +52,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
